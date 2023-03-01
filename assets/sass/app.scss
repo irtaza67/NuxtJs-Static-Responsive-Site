@@ -1,0 +1,309 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-vue/src/index.scss";
+
+$theme-success :  #2cd780;
+$theme-text-white: #fefefe;
+$theme-text-grey: #455164;
+$theme-text-dark-grey : #3a4557;
+$theme-text-light-grey: #9ca4ad;
+$theme-blue: #7599ee;
+$theme-sky-blue: #4ec3fd;
+
+html {
+    .cursor-pointer {
+        cursor: pointer;
+    }
+    .list-style-none {
+        list-style:none!important;
+    }
+    .text{
+        &.text--white {
+            color:$theme-text-white;
+        }
+        &.text--success {
+            color: $theme-success;
+        }
+        &.text--blue {
+            color: $theme-blue;
+        }
+        &.text--medium {
+            font-size: 22px;
+        }
+        &.text--small {
+            font-size: 14px;
+        }
+        &.text--yellow {
+            color:#fee033;
+        }
+        &.text--sky {
+            color:$theme-sky-blue;
+        }
+        &.text--line--height {
+            line-height: 23px;
+        }
+        &.text--grey {
+            color:$theme-text-grey
+        }
+        &.text--light--grey {
+            color:$theme-text-light-grey;
+        }
+        &.text--dark--grey {
+            color:$theme-text-dark-grey;
+        }
+    }
+    .button {
+        &.btn--theme--white {
+            width: 170px!important;
+            text-align: center!important;
+            background-color: $theme-text-white!important;
+            color: $theme-sky-blue!important;
+            height: 54px!important;
+            border-radius: 40px!important;
+            border:none!important;
+        }
+        &.btn--theme--success {
+            width: 243px;
+            text-align: center;
+            background-color: $theme-success;
+            color: $theme-text-white;
+            height: 44px;
+            border-radius: 40px;
+            border:none!important;
+        }
+    }
+    header {
+        .navbar-nav {
+            align-items: baseline;
+        }
+    }
+    .wrapper {
+        .opacity {
+            opacity: .6;
+        }
+        .width {
+            &.w--content--fit{
+                width: fit-content;
+            }
+            &.w-22 {
+                width: 22%;
+            }
+            &.w-65 {
+                width: 65%;
+            }
+            &.w-85 {
+                width: 85%;
+            }
+        }
+
+        .height {
+            &.h-80 {
+                height: 80%;
+            }
+        }
+
+     
+        .hero {
+            background: url("../img/hero.png") center center no-repeat;
+            height: 660px;
+        }
+        .video_wrapper {
+            .video {
+                margin-top: -138px;
+                position: relative;
+                img {
+                    border-radius: 23px;
+                    overflow: hidden;
+                }
+                .video_control {
+                    width: 186px;
+                    height: 186px;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    left: 0px;
+                    bottom: 0px;
+                    margin: auto;
+                    transition:.5s;
+                    &:hover {
+                        filter: invert(.3);
+                        transition:.5s;
+                    }
+                }
+            }
+        }
+        .short_list {
+            .cards {
+                box-shadow: 1px 2px 11px 5px rgba(10,106,251,0.32157);
+                img {
+                    height: 213px;
+                    width: 213px;
+                }
+            }
+        }
+        .solutions {
+            .cards {
+                box-shadow: 1px 2px 11px 5px rgba(10,106,251,0.32157);
+                img {
+                    height: 81px;
+                    width: 105px;
+                }
+            }
+        }
+        .pricing_transparent {
+            .buy_now {
+                box-shadow: 1px 2px 11px 5px rgba(10,106,251,0.32157);
+                position: relative;
+                border-radius: 30px;
+                div {
+                    &:first-child {
+                        height: 310px;
+                        background-image: radial-gradient(at top left, #4466f3 38%, #4db5fd 68%, transparent 50.5%);
+                        background-size: 104% 104%;
+                        background-repeat: no-repeat;
+                        border-radius: 22px;
+                    }
+                    &:last-child {
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+        .any_question {
+            background: url('../img/anyquestion-bg.png') center center no-repeat;
+           .row {
+               > div {
+                   &:first-child{
+                       border-radius: 20px;
+                   }
+               }
+           }
+        }
+    }
+    footer {
+        background: url('../img/footer-bg.png') center center no-repeat;
+    }
+    .roadmap{
+        background-image: linear-gradient(to right, #06226f,#042d8e,#06226f);
+        .points-3 {
+            position: absolute;
+    top: -8px;
+    left: 57px;
+        }
+        .points-2 {
+            position: absolute;
+    top: -8px;
+    left: 284px;
+        }
+        .points {
+            position: absolute;
+    top: -8px;
+    right: 150px;
+        }
+        .row {
+            &:nth-child(2) {
+                > div {
+                    &:nth-child(1){
+
+                        .points-2 {
+                            position: absolute;
+                            bottom: -63px;
+                            z-index: 33;
+                            left: 284px;
+                            top:unset!important;
+                        }
+                    }
+                    &:nth-child(2){
+                        .points {
+                            position: absolute;
+                            bottom: -63px;
+                            z-index: 33;
+                            left: 272px;
+                            top:unset!important;
+                        }
+                    }
+                    &:nth-child(3){
+                        .points {
+                            position: absolute;
+                            bottom: -77px;
+                            z-index: 33;
+                            right: 46px;
+                            top:unset!important;
+                        }
+                    }
+                }
+            }
+            &:nth-child(4) {
+                > div {
+                    &:nth-child(1){
+
+                        .points-3 {
+                            position: absolute;
+                            top: -63px;
+                            z-index: 33;
+                            left: 57px!important;
+                            
+                        }
+                    }
+                    &:nth-child(2){
+                        .points {
+                            position: absolute;
+                           
+                            top: -63px;
+                            z-index: 33;
+                            left: 170px;
+                            
+                        }
+                    }
+                    &:nth-child(3){
+                        .points {
+                            position: absolute;
+                           
+                            top: -63px;
+                            z-index: 33;
+                            right: 151px;
+                        }
+                    }
+                }
+            }
+            > div {
+                position: relative;
+                .divider-1 {
+                    position: absolute;
+    top: 0px;
+    right: -5px;
+                }
+                .divider-2 {
+                    position: absolute;
+                    top: -46px;
+                    left: -5px;
+
+                }
+                .divider-3 {
+                    position: absolute;
+                    top: -46px;
+                    left: -5px;
+
+                }
+                .divider-4 {
+                    position: absolute;
+                    top: -46px;
+                    left: -5px;
+
+                }
+            }
+           
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .navbar-nav {
+        background-color: #4f73f3;
+        position: relative;
+        z-index: 3333;
+    }
+  }
+
+@import "vodal/common.css";
+@import "vodal/door.css";
